@@ -12,6 +12,12 @@ const io = socketio(server);
 
 io.on('connection', (socket)=>{
     console.log('We have a connection');
+
+    socket.on('join', ({name, room}, cb) => {
+        console.log(name, room);
+  
+    });
+
     socket.on('disconnect', () => {
         console.log('User has left');
     });
