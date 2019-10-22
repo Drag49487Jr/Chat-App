@@ -5,9 +5,50 @@
     top: 20vh;
     height: 70vh;
     width: 70vh;
-    background-color:cyan;
+    background: rgba(100, 248, 248, 0.3);
 }
 .joinInnerContainer {
     position: relative;
-    left: 20%;
+    left: 33%;
+}
+.heading {
+    background-color: cyan;
+    opacity: .5;
+    position: relative;
+    width: 68vh;
+    right: 31%;
+}
+.JoinInput{
+    position: relative;
+    right: 33%;
+    height: 10vh;
+    width: 68vh;
+    margin: 10px;
+}
+.button {
+    margin-top: 40px;
+    font-size: 40px;
+    color:#3498db;
+    border: 1px solid #3498db;
+    background: none;
+    transition: .8s;
+    position: relative;
+    overflow: hidden;
+}
+.button:hover {
+    color: #fff;
+}
+.button::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%; 
+    height: 0%; 
+    background: cyan;
+    z-index: -1;
+    transition: 0.8s;
+    border-radius: 0 0 50% 50%;
+}
+.button:hover::before{
+    height: 180%;
 }
