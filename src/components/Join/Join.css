@@ -1,0 +1,13 @@
+.joinOuterContainer{
+    display:flex;
+    position: relative;
+    left: 28%;
+    top: 20vh;
+    height: 70vh;
+    width: 70vh;
+    background-color:cyan;
+}
+.joinInnerContainer {
+    position: relative;
+    left: 20%;
+}
